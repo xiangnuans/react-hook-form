@@ -1417,6 +1417,7 @@ export function createFormControl<
       (!_options.shouldUnregister && !isEmptyObject(values));
 
     _state.watch = !!_options.shouldUnregister;
+    _state.action = false;
 
     _subjects.state.next({
       submitCount: keepStateOptions.keepSubmitCount
